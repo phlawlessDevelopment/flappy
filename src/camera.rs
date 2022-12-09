@@ -7,7 +7,7 @@ pub struct MainCamera;
 
 fn setup(mut commands: Commands) {
 	commands
-	.spawn_bundle(Camera2dBundle::default())
+	.spawn(Camera2dBundle::default())
 	.insert(MainCamera);
 }
 
