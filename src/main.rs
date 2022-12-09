@@ -160,6 +160,7 @@ fn check_pipes(
 }
 
 fn apply_y_velocity(mut player_q: Query<(&mut Player, &mut Velocity)>, time: Res<Time>) {
+    
     let (mut player, mut player_velocity) = player_q.single_mut();
     if player.is_jumping {
         if player.jump_timer.finished() {
